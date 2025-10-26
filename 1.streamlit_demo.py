@@ -1,9 +1,7 @@
 from langchain_openai import ChatOpenAI
-from dotenv import load_dotenv
 from openai import api_key
 import streamlit as st
 
-load_dotenv()
 
 st.title("Ask Anything")
 
@@ -27,3 +25,4 @@ if ask_button and question:
         st.write(response.content)
     else:
         st.warning("Please enter your API key in the sidebar!")
+
